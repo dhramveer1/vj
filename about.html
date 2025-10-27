@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Er. Dhramveer Joshi</title>
+
+  <!-- Fonts + main stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Er. Dhramveer Joshi" class="brand-logo" />
+        <div>
+          <div class="brand-name">Er. Dhramveer Joshi</div>
+          <div class="brand-sub">Sr. Solar Design Engineer</div>
+        </div>
+      </a>
+
+      <!-- Desktop navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="btn small outline">Contact</a>
+      </nav>
+
+      <!-- Mobile hamburger (top-right) -->
+      <button id="hamburgerBtn" class="mobile-hamburger" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false" type="button">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer overlay -->
+  <div id="drawerOverlay" class="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer (right-side) -->
+  <aside id="mobileDrawer" class="drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="mobileDrawerLabel">
+    <div style="display:flex;justify-content:flex-end;padding:8px;">
+      <button id="drawerCloseBtn" aria-label="Close menu" style="background:none;border:0;font-size:20px;cursor:pointer;">✕</button>
+    </div>
+
+    <h2 id="mobileDrawerLabel" class="sr-only">Menu</h2>
+
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;padding:0 12px;">
+      <img src="assets/images/profile.jpg" alt="Dhramveer" style="width:46px;height:46px;border-radius:8px;object-fit:cover;" />
+      <div>
+        <div style="font-weight:800">Er. Dhramveer Joshi</div>
+        <div style="font-size:13px;color:var(--muted)">Solar Design Engineer</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Mobile navigation" style="padding:0 12px 18px 12px;">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div style="margin-top:16px;display:flex;flex-direction:column;gap:10px;padding:0 12px 18px 12px;">
+      <a class="btn primary" href="contact.html">Let's Discuss Your Project</a>
+      <a class="btn ghost" href="mailto:idveerjoshi@gmail.com">Email Me</a>
+      <a class="btn small" href="assets/Dhramveer_Joshi_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
+	<!-- mobile-drawer bottom logo (mobile-only) -->
+  <div class="drawer-footer-logo" aria-hidden="true">
+    <a href="index.html" title="Home">
+      <img src="assets/images/logo.png" alt="Dhramveer Joshi logo" class="drawer-footer-img">
+    </a>
+  </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="container section" role="main">
+    <div class="card profile-description" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p class="muted">Combining academic excellence with on-site and design office experience to deliver technically sound solar solutions.</p>
+    </div>
+
+    <!-- Balanced two-column layout (desktop) / stacked (mobile) -->
+    <section class="about-full balanced" style="margin-top:20px;">
+      <!-- LEFT: profile card -->
+      <aside class="profile-column" data-aos="fade-right">
+        <div class="profile-card card">
+          <img src="assets/images/profile.jpg" alt="Er. Dhramveer Joshi" class="profile-photo large" loading="lazy" decoding="async">
+          <div class="profile-caption" style="margin-top:12px;">
+            <div style="font-size:18px;font-weight:800;color:var(--text)">Er. Dhramveer Joshi</div>
+            <div style="color:var(--muted);margin-top:4px;font-weight:600">Solar Design Engineer • B.Tech (Electrical)</div>
+          </div>
+
+          <div style="margin-top:14px; width:100%; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+            <a class="btn primary" href="mailto:idveerjoshi@gmail.com?subject=Design%20Enquiry">Hire Me</a>
+            <a class="btn ghost" href="projects.html">View Projects</a>
+          </div>
+
+          <div style="margin-top:14px; text-align:center; color:var(--muted); font-size:14px;">
+            <div><strong>Email</strong><br><a class="link" href="mailto:idveerjoshi@gmail.com">idveerjoshi@gmail.com</a></div>
+            <div style="margin-top:8px;"><strong>Location</strong><br>India — Available remotely</div>
+            <div style="margin-top:8px;"><strong>Call</strong><br><a class="link" href="tel:+919992553859">+91 99925 53859</a></div>
+            <div style="margin-top:8px;"><strong>LinkedIn</strong><br><a class="link" href="https://www.linkedin.com/in/veerjoshi" target="_blank" rel="noopener">linkedin.com/in/veerjoshi</a></div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT: main description -->
+      <article class="content-column" data-aos="fade-left">
+        <div class="card profile-description">
+          <p>I’m a passionate Solar Design Engineer with expertise in creating optimized, technically sound, and cost-effective solar plant layouts. Skilled in AutoCAD, Helioscope, and PVsyst, I provide complete design documentation including SLDs, cable routing, earthing & lightning layouts, BOM, and DBR reports for both rooftop and ground-mounted systems. I focus on execution-ready deliverables and on-site coordination to reduce rework and speed up commissioning.</p>
+
+          <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;">
+            <div style="flex:1;min-width:220px">
+              <h4>Quick highlights</h4>
+              <ul class="highlist">
+                <li>Ransisar — 8.48 MWp (Ground Mounted)</li>
+                <li>Rampura Matoria — 6.56 MWp</li>
+                <li>Malsar — 8.48 MWp</li>
+                <li>Fatehgarh — 3.28 MWp</li>
+                <li>Bhojasar — 8.48 MWp</li>
+              </ul>
+            </div>
+
+            <div style="flex:1;min-width:220px">
+              <h4>More projects</h4>
+              <ul class="highlist">
+                <li>Gighichiya — 3.89 MWp</li>
+                <li>Norangdesar — 3.28 MWp</li>
+                <li>Tolasar — 8.48 MWp</li>
+                <li>Billyubas — 5.2 MWp</li>
+                <li>Phaggu Kalanwali — 2.6 MWp</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="highlights" style="margin-top:12px">Total commissioned: <strong>11 projects</strong> — combined capacity: <strong>62.01 MWp</strong>.</p>
+
+          <h4 style="margin-top:18px">Qualifications</h4>
+          <ul class="highlist">
+            <li>B.Tech – Electrical Engineering</li>
+            <li>Specialized in Solar PV System Design & Electrical Layouts</li>
+            <li>Certified in AutoCAD Electrical Design</li>
+            <li>Training in PVsyst & Helioscope</li>
+            <li>Familiar with CEA / MNRE / DISCOM compliance</li>
+          </ul>
+
+          <h4 style="margin-top:18px">Tools & Expertise</h4>
+          <div class="tools-grid" style="margin-top:8px;">
+            <div class="tool">AutoCAD</div>
+            <div class="tool">PVsyst</div>
+            <div class="tool">Helioscope</div>
+            <div class="tool">MS Excel</div>
+            <div class="tool">SketchUp</div>
+            <div class="tool">Google Earth</div>
+          </div>
+
+          <div style="margin-top:18px; display:flex; gap:10px; align-items:center;">
+            <a class="btn primary" href="contact.html">Let's Discuss Your Project</a>
+            <a class="btn ghost" href="mailto:idveerjoshi@gmail.com?subject=Project%20Enquiry">Email Me</a>
+            <a class="btn small" href="assets/Dhramveer_Joshi_CV.pdf" style="margin-left:auto">Download CV</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (Premium Engineer Theme) ===== -->
+<footer class="footer-modern">
+  <div class="footer-top">
+    <div class="footer-content container">
+      <!-- Left -->
+      <div class="footer-about" data-aos="fade-up">
+        <h3>Er. Dhramveer Joshi</h3>
+        <p class="tagline">Solar Design Engineer • Electrical (B.Tech)</p>
+        <p class="summary">
+          Designing precise, compliant, and efficient solar power systems —
+          from rooftop setups to MW-scale ground plants.
+        </p>
+        <div class="footer-social">
+          <a href="mailto:idveerjoshi@gmail.com" title="Email">
+            <i class="icon">📧</i>
+          </a>
+          <a href="https://www.linkedin.com/in/veerjoshi" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="icon">🔗</i>
+          </a>
+          <a href="https://wa.me/919992553859" target="_blank" title="WhatsApp">
+            <i class="icon">💬</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Center -->
+      <div class="footer-nav" data-aos="fade-up" data-aos-delay="100">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right -->
+      <div class="footer-contact" data-aos="fade-up" data-aos-delay="200">
+        <h4>Contact</h4>
+        <p><strong>Email:</strong> <a href="mailto:idveerjoshi@gmail.com">idveerjoshi@gmail.com</a></p>
+        <p><strong>Call:</strong> <a href="tel:+919992553859">+91 99925 53859</a></p>
+        <p><strong>Location:</strong> Arnianwali, Sirsa (Haryana)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom" >
+    <h2>© 2025 🧑‍💻<a href="https://www.linkedin.com/in/veerjoshi">Er. Dhramveer Joshi</a>|  Designed with ⚡ Precision & Energy</h2>
+  </div>
+</footer>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919992553859" class="fab-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.82 11.82 0 0 0 12 .6a11.82 11.82 0 0 0-8.52 3.48A11.82 11.82 0 0 0 0 12c0 2.09.54 4.15 1.57 5.96L0 24l6.2-1.63A11.82 11.82 0 0 0 12 23.4a11.82 11.82 0 0 0 8.52-3.48A11.82 11.82 0 0 0 24 12a11.82 11.82 0 0 0-3.48-8.52ZM12 21.3a9.32 9.32 0 0 1-4.73-1.27l-.34-.19-3.67.96.98-3.58-.22-.37a9.28 9.28 0 0 1-1.4-4.84 9.3 9.3 0 0 1 18.6 0A9.3 9.3 0 0 1 12 21.3Zm5.25-7.03c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.3-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.78-1.46-1.73-1.63-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.3.29-.5.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.48h-.54c-.18 0-.47.07-.72.36-.26.3-.96.94-.96 2.29s.99 2.65 1.13 2.83c.15.19 1.95 2.98 4.73 4.17.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
+  </a>
+
+  <!-- AOS (optional animations) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Global script (drawer handling, AOS init, safety) -->
+  <script src="assets/script.js"></script>
+</body>
+</html>

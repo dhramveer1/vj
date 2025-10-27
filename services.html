@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Er. Dhramveer Joshi</title>
+
+  <!-- Fonts & Styles (keep your existing assets/styles.css + AOS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Page-specific micro-styles (keeps global CSS intact) */
+    .services-hero { text-align:center; padding:72px 20px 56px; border-radius:0 0 36px 36px; background: linear-gradient(160deg, rgba(47,179,107,0.08), rgba(42,167,240,0.05)); box-shadow: inset 0 -10px 30px rgba(6,32,36,0.04); }
+    .services-hero h1{ font-family:var(--fw-heading); font-size:36px; margin:0 0 8px; color:var(--text); }
+    .services-hero p{ color:var(--muted); max-width:820px; margin:0 auto; font-size:16.5px; }
+
+    .feature-badge { display:inline-block; padding:6px 10px; border-radius:999px; background:linear-gradient(90deg,var(--leaf),var(--sky)); color:#052425; font-weight:800; margin-right:8px; font-size:13px; }
+
+    .price-card .cta-row{ display:flex; gap:12px; margin-top:16px; align-items:center; }
+    .price-card .cta-row .btn{ flex:1; }
+
+    .price-highlight { position:absolute; top:18px; right:18px; background:linear-gradient(90deg,var(--solar),#ffd88a); padding:6px 10px; border-radius:8px; font-weight:700; font-size:13px; color:#052425; }
+
+    /* smaller tweak for icons inside quick-cards */
+    .quick-cards .card h4{ margin:0 0 8px; font-size:16px; }
+    .quick-cards .card p{ margin:0; color:var(--muted); font-size:14px; }
+
+    @media (max-width:820px){
+      .services-hero { padding:40px 16px 28px; border-radius:0 0 18px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Er. Dhramveer Joshi" class="brand-logo" />
+        <div>
+          <div class="brand-name">Er. Dhramveer Joshi</div>
+          <div class="brand-sub">Sr. Solar Design Engineer</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a class="active" href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="btn small outline">Contact</a>
+      </nav>
+
+      <!-- Mobile hamburger (3-line) -->
+      <button id="hamburgerBtn" class="mobile-hamburger" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false" type="button">
+        <span class="bar" aria-hidden="true"></span><span class="bar" aria-hidden="true"></span><span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer overlay (no hidden attr; aria-hidden kept true) -->
+  <div id="drawerOverlay" class="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer (right-side) -->
+  <aside id="mobileDrawer" class="drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="mobileDrawerLabel">
+    <div style="display:flex;justify-content:flex-end;padding:8px;">
+      <button id="drawerCloseBtn" aria-label="Close menu" style="background:none;border:0;font-size:20px;cursor:pointer;">✕</button>
+    </div>
+
+    <h2 id="mobileDrawerLabel" class="sr-only">Menu</h2>
+
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;padding:0 12px;">
+      <img src="assets/images/profile.jpg" alt="Dhramveer" style="width:46px;height:46px;border-radius:8px;object-fit:cover;" />
+      <div>
+        <div style="font-weight:800">Er. Dhramveer Joshi</div>
+        <div style="font-size:13px;color:var(--muted)">Solar Design Engineer</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Mobile navigation" style="padding:0 12px 18px 12px;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div style="margin-top:16px;display:flex;flex-direction:column;gap:10px;padding:0 12px 18px 12px;">
+      <a class="btn primary" href="contact.html">Let's Discuss Your Project</a>
+      <a class="btn ghost" href="mailto:idveerjoshi@gmail.com">Email Me</a>
+      <a class="btn small" href="assets/Dhramveer_Joshi_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
+
+    <!-- mobile-drawer bottom logo (mobile-only) -->
+    <div class="drawer-footer-logo" aria-hidden="true">
+      <a href="index.html" title="Home">
+        <img src="assets/images/logo.png" alt="Dhramveer Joshi logo" class="drawer-footer-img">
+      </a>
+    </div>
+  </aside>
+
+  <!-- HERO -->
+  <section class="services-hero" data-aos="fade-down">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;">
+        <span class="feature-badge">Rooftop • Ground • Utility</span>
+        <span class="feature-badge" style="background:linear-gradient(90deg,var(--solar),#ffd88a);color:#052425">CEA / MNRE</span>
+      </div>
+      <h1>Professional Solar Design & Consultancy</h1>
+      <p>Optimized, compliance-ready solar design solutions — from rooftop systems to MW-scale plants. Execution-ready drawings, BOQ & DBR, and on-site coordination to speed commissioning.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <main class="container section" role="main">
+    <div class="pricing-grid" data-aos="fade-up">
+      <!-- Basic -->
+      <article class="price-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="price-highlight">Entry</div>
+        <h3>Basic Solar Design</h3>
+        <p class="price">₹1,500 – ₹2,500</p>
+        <ul>
+          <li>SLD, site layout & short technical report</li>
+          <li>Suitable for residential rooftops (up to 50 kW)</li>
+          <li>Delivery: 2–3 working days</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:idveerjoshi@gmail.com?subject=Basic%20Package%20Enquiry">Request Design</a>
+          <a class="btn ghost" href="services.html#basic" title="More">More</a>
+        </div>
+      </article>
+
+      <!-- Standard -->
+      <article class="price-card highlight" data-aos="fade-up" data-aos-delay="80">
+        <div class="price-highlight">Popular</div>
+        <h3>Standard Solar Design</h3>
+        <p class="price">₹3,000 – ₹5,000</p>
+        <ul>
+          <li>Full layout: SLD, earthing, lightning, cable routing & trench</li>
+          <li>Detailed Bill of Materials (BOM) & design summary</li>
+          <li>Rooftop & small ground systems up to 100 kW</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:idveerjoshi@gmail.com?subject=Standard%20Package%20Enquiry">Request Design</a>
+          <a class="btn ghost" href="services.html#standard" title="More">More</a>
+        </div>
+      </article>
+
+      <!-- Advanced -->
+      <article class="price-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="price-highlight">Pro</div>
+        <h3>Advanced / MW-Scale Design</h3>
+        <p class="price">₹8,000 – ₹15,000+</p>
+        <ul>
+          <li>Utility-scale plant packages: layout, structural, electrical, BOM & DBR</li>
+          <li>Coordination with EPC & civil teams, and protection design</li>
+          <li>CEA / MNRE / DISCOM compliance documentation</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:idveerjoshi@gmail.com?subject=Advanced%20Package%20Enquiry">Request Design</a>
+          <a class="btn ghost" href="services.html#advanced" title="More">More</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- ADDITIONAL SERVICES -->
+    <div class="section-head" style="margin-top:46px;" data-aos="fade-up">
+      <h3>Additional Services</h3>
+      <p class="muted">Add-ons and specialised consulting available on request.</p>
+    </div>
+
+    <div class="quick-cards" data-aos="fade-up">
+      <div class="card" data-aos="fade-up" data-aos-delay="40">
+        <h4>As-Built Documentation</h4>
+        <p>Site verification-based drawings for O&M handover and regulatory filing.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="80">
+        <h4>Energy Yield Simulation</h4>
+        <p>Detailed PVsyst / Helioscope simulations with yearly yield & loss analysis.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="120">
+        <h4>Design Review & Optimisation</h4>
+        <p>Technical audit of existing layouts to improve energy yield and reduce BOS cost.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;text-align:center" data-aos="fade-up">
+      <a href="contact.html" class="btn secondary">Request a Custom Package</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-modern">
+    <div class="footer-top">
+      <div class="footer-content container">
+        <div class="footer-about" data-aos="fade-up">
+          <h3>Er. Dhramveer Joshi</h3>
+          <p class="tagline">Solar Design Engineer • Electrical (B.Tech)</p>
+          <p class="summary">Designing precise, compliant, and efficient solar power systems — from rooftop to MW-scale ground plants.</p>
+          <div class="footer-social">
+            <a href="mailto:idveerjoshi@gmail.com" title="Email">📧</a>
+            <a href="https://www.linkedin.com/in/veerjoshi" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
+            <a href="https://wa.me/919992553859" target="_blank" title="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-nav" data-aos="fade-up" data-aos-delay="100">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact" data-aos="fade-up" data-aos-delay="200">
+          <h4>Contact</h4>
+          <p><strong>Email:</strong> <a href="mailto:idveerjoshi@gmail.com">idveerjoshi@gmail.com</a></p>
+          <p><strong>Call:</strong> <a href="tel:+919992553859">+91 99925 53859</a></p>
+          <p><strong>Location:</strong> Arnianwali, Sirsa (Haryana)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 🧑‍💻 <a href="https://www.linkedin.com/in/veerjoshi" target="_blank">Er. Dhramveer Joshi</a> | Designed with ⚡ Precision & Energy</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button (unchanged) -->
+  <a href="https://wa.me/919992553859" class="fab-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.82 11.82 0 0 0 12 .6a11.82 11.82 0 0 0-8.52 3.48A11.82 11.82 0 0 0 0 12c0 2.09.54 4.15 1.57 5.96L0 24l6.2-1.63A11.82 11.82 0 0 0 12 23.4a11.82 11.82 0 0 0 8.52-3.48A11.82 11.82 0 0 0 24 12a11.82 11.82 0 0 0-3.48-8.52ZM12 21.3a9.32 9.32 0 0 1-4.73-1.27l-.34-.19-3.67.96.98-3.58-.22-.37a9.28 9.28 0 0 1-1.4-4.84 9.3 9.3 0 0 1 18.6 0A9.3 9.3 0 0 1 12 21.3Zm5.25-7.03c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.3-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.78-1.46-1.73-1.63-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.3.29-.5.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.48h-.54c-.18 0-.47.07-.72.36-.26.3-.96.94-.96 2.29s.99 2.65 1.13 2.83c.15.19 1.95 2.98 4.73 4.17.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
+  </a>
+
+  <!-- AOS + site script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/script.js"></script>
+  <script> if (window.AOS && typeof window.AOS.init === 'function') window.AOS.init({ duration:700 }); </script>
+</body>
+</html>
